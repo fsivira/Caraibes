@@ -1,4 +1,3 @@
-/*-variables-*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 body {
   font-family: "Lato", sans-serif;
@@ -188,7 +187,7 @@ p {
 .galeria .galeria-item {
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px black;
 }
 .galeria .galeria-item img {
   width: 100%;
@@ -215,7 +214,7 @@ p {
   padding: 20px;
   background-color: #Ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px black;
 }
 .contacto h2 {
   font-size: 35px;

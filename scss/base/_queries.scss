@@ -1,0 +1,96 @@
+/*--header--*/
+
+@media (max-width: 750px) {
+    .logo{
+        font-size: 70px;
+    }
+}
+
+/*---footer--*/
+
+@media (max-width: 750px) {
+    .footer-titulo {
+        font-size: 40px;
+    }
+
+    .footer-iconos {
+        gap: 15px;
+
+        a {
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+
+/*----servicios---*/
+
+@media (max-width: 750px) {
+    .servicio {
+        background-color: $color-7;
+    }
+}
+
+@media (max-width: 400px) {
+    .servicio {
+        background-color: $color-8;
+    }
+
+    .servicio1 {
+        h3 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+/*---nosotros---*/
+
+@media (max-width: 750px) {
+    .historia {
+        text-align: left;
+        padding: 15px;
+    }
+
+    .galeria {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 360px) {
+    .historia {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*-----contacto---*/
+
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+    }
+
+    .contacto1 {
+        iframe {
+            height: 250px;
+        }
+    }
+}

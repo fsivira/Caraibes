@@ -89,6 +89,9 @@ p {
     padding-left: 15px;
     text-align: center;
 }
+.destacados p{
+    text-align: center;
+}
 
 .destacado div img {
 
@@ -273,7 +276,6 @@ p {
 
 .servicios {
     text-align: center;
-    
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -324,7 +326,7 @@ p {
     }
 }
 
-/*!----contacto---*/
+/*----contacto---*/
 
 .contacto- {
     max-width: 1200px;

@@ -59,6 +59,7 @@ p {
 .hero {
   text-align: center;
   height: 500px;
+  background-attachment: fixed;
   background-image: url("../img/imagen1..jpg");
   color: #F2F2F2;
   background-position: center;
@@ -68,11 +69,25 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .hero p {
   margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .destacados h3 {
   margin-top: 20px;
   padding-left: 15px;
@@ -90,8 +105,8 @@ p {
 }
 .destacado div {
   border: 2px solid gray;
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 360px;
   text-align: center;
   margin: 20px;
   border-radius: 8px;
@@ -122,7 +137,7 @@ p {
 .bombones1 div {
   border: 2px solid gray;
   width: 300px;
-  height: 350px;
+  height: 360px;
   text-align: center;
   margin: 20px;
   border-radius: 8px;
@@ -315,6 +330,7 @@ p {
 /*----servicios---*/
 @media (max-width: 750px) {
   .servicio {
+    transition: background-color 0.5s ease;
     background-color: aqua;
   }
 }

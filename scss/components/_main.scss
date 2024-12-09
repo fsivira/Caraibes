@@ -3,6 +3,7 @@
 .hero {
     text-align: center;
     height: 500px;
+    background-attachment: fixed;
     background-image: url("../img/imagen1..jpg");
     color: $color-3;
     background-position: center;
@@ -12,12 +13,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     p {
         margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 
 .destacados {
     h3 {
@@ -33,14 +50,12 @@
 
 .destacado {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex (flex, center, wrap);
 
     div {
         border: 2px solid $color-5;
-        width: 250px;
-        height: 300px;
+        width: 300px;
+        height: 360px;
         text-align: center;
         margin: 20px;
         border-radius: 8px;
@@ -72,14 +87,12 @@
 
 .bombones1 {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex (flex, center, wrap);
 
     div {
         border: 2px solid $color-5;
         width: 300px;
-        height: 350px;
+        height: 360px;
         text-align: center;
         margin: 20px;
         border-radius: 8px;
@@ -113,9 +126,8 @@
     margin-bottom: 10px;
     padding: 10px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex (flex, center, wrap);
+
 
     div {
         width: 500px;
@@ -165,9 +177,10 @@
             transition: transform 0.3s ease;
 
         }
-        
+
     }
-    .galeria-item:hover img{
+
+    .galeria-item:hover img {
         transform: scale(1.1);
     }
 }

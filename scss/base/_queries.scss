@@ -1,7 +1,7 @@
 /*--header--*/
 
 @media (max-width: 750px) {
-    .logo{
+    .logo {
         font-size: 70px;
     }
 }
@@ -30,6 +30,7 @@
 
 @media (max-width: 750px) {
     .servicio {
+        transition: background-color 0.5s ease;
         background-color: $color-7;
     }
 }

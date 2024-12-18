@@ -16,21 +16,18 @@ h1 {
     font-family: "Lato", sans-serif;
     color: $color-2;
     font-size: nth($font-size, 4);
-    font-style:normal;
-    font-weight:bold;
+    @extend %font;
 }
 
 h2 {
     font-size: nth($font-size, 3 );
-    font-style:normal;
-    font-weight:bold;
+    @extend %font;
     padding: 5px;
 }
 
 h3 {
     font-size: nth($font-size, 2 );
-    font-style:normal;
-    font-weight:bold;
+    @extend %font;
     padding: 5px;;
 }
 
@@ -48,11 +45,12 @@ p {
 
 .boton {
     text-transform: uppercase;
-    color: $color-2;
+    color: $color-9;
     text-decoration: none;
     padding: 5px;
     border: 2px solid $color-4;
     border-radius: 8px;
+    background-color: rgba(168, 80, 80, 0.509);
     &:hover{
         background-color: $color-4;
     }

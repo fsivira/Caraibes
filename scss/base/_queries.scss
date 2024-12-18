@@ -28,17 +28,7 @@
 
 /*----servicios---*/
 
-@media (max-width: 750px) {
-    .servicio {
-        transition: background-color 0.5s ease;
-        background-color: $color-7;
-    }
-}
-
 @media (max-width: 400px) {
-    .servicio {
-        background-color: $color-8;
-    }
 
     .servicio1 {
         h3 {

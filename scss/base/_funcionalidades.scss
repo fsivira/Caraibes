@@ -9,12 +9,18 @@ $color-7: aqua;
 $color-8: #F8AE86;
 $color-9: black;
 
-$font-size: 25px, 35px, 50px, 90px;
+$font-size: 25px, 32px, 50px, 70px;
 
 @mixin flex ($flex, $center, $wrap){
     display: $flex ;
     justify-content: $center;
     flex-wrap: $wrap;
+}
+
+@mixin flexdiv ($flex, $center,){
+    display: flex;
+    align-items: center;
+    
 }
 
 %font {

@@ -1,42 +1,66 @@
-/*--header--*/
+/*---index---*/
 
 @media (max-width: 750px) {
-    .logo {
-        font-size: 70px;
+    .hero{
+        h1 {
+            font-size: 3.8em;
+        }
+    }
+    
+}
+@media (max-width: 680px) {
+    .destacado{
+        div {
+            width: 200px;
+            height: 370px;
+    
+            h3 {
+                height: 60px;
+                font-size: 1rem;
+            }
+    
+            img {
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .destacado
+    div {
+        width: 150px;
+        height: 300px;
+        margin: 10px;
+
+        h3 {
+            height: 45px;
+            font-size: 1rem;
+        }
+
+        img {
+            height: 100px;
+            object-fit: cover;
+        }
+        p {
+            font-size: 1rem;
+        }
     }
 }
 
 /*---footer--*/
 
 @media (max-width: 750px) {
-    .footer-titulo {
-        font-size: 40px;
-    }
 
     .footer-iconos {
         gap: 15px;
 
         a {
             img {
-                width: 35px;
-                height: 35px;
+                width: 30px;
+                height: 30px;
             }
-        }
-    }
-}
-
-
-/*----servicios---*/
-
-@media (max-width: 400px) {
-
-    .servicio1 {
-        h3 {
-            font-size: 2em;
-        }
-
-        p {
-            font-size: 1.2em;
         }
     }
 }
@@ -46,8 +70,13 @@
 
 @media (max-width: 750px) {
     .historia {
-        text-align: left;
-        padding: 15px;
+        h1 {
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 1.9em;
+        }
     }
 
     .galeria {
@@ -56,32 +85,95 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .historia {
-        h2 {
-            font-size: 1.5em;
+        h1 {
+            font-size: 2.8em;
         }
 
         p {
-            font-size: 0.9em;
+            font-size: 1.2em;
         }
     }
 
     .galeria {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /*-----contacto---*/
 
 @media (max-width: 750px) {
-    main {
-        flex-direction: column;
-    }
 
     .contacto1 {
         iframe {
             height: 250px;
+        }
+    }
+}
+
+/*----productos---*/
+
+@media (max-width: 680px) {
+    .producto{
+        h1, h2{
+            font-size: 3em;
+        }
+    }
+    .bombones1
+    div {
+        width: 200px;
+        height: 370px;
+
+        h3 {
+            height: 60px;
+            font-size: 1rem;
+        }
+
+        img {
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .bombones1
+    div {
+        width: 150px;
+        height: 300px;
+        margin: 10px;
+
+        h3 {
+            height: 45px;
+            font-size: 1rem;
+        }
+
+        img {
+            height: 100px;
+            object-fit: cover;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+/*--servicios--*/
+
+@media (max-width: 680px){
+    .servicio{
+        h1{
+            font-size: 3.2em;
+
+        }
+    }
+    .servicio1{
+        div{
+            height: 670px;
+        }
+        h2{
+            font-size: 2.8em;
         }
     }
 }

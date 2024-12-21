@@ -16,11 +16,13 @@
     overflow: hidden;
 
     h1{
-        color: $color-1;
+        color: $color-3;
     }
 
     p {
-        color: $color-1;
+        color: $color-3;
+        text-align: center;
+        margin: 5px;
         margin-bottom: 20px;
         opacity: 0;
         animation: fadeIn 1s ease-in-out forwards;
@@ -50,6 +52,7 @@
 
     p {
         text-align: center;
+        margin: 5px;
     }
 }
 
@@ -205,7 +208,7 @@
     .galeria-item {
         overflow: hidden;
         border-radius: 8px;
-        box-shadow: 0 4px 8px $color-9;
+        box-shadow: 0 2px 4px $color-5;
 
         img {
             width: 100%;
